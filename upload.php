@@ -34,5 +34,6 @@ if (!empty($_FILES)) {
     <p><?php echo isset($errors['error']) ? $errors['error'] : '' ?></p>
 
 <?php foreach ($files as $file) : ?>
+    <img src="<?= $file ?>" width="120px">
     <p><?= $file ?></p>
 <?php endforeach; ?>
